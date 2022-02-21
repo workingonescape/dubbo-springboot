@@ -1,9 +1,0 @@
-2022-02-22-01-39 [main] [com.alibaba.dubbo.common.logger.LoggerFactory] [INFO] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
-  2022-02-22-01-39 [main] [com.alibaba.boot.dubbo.context.event.WelcomeLogoApplicationListener] [INFO] - 
-
- :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
- :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
- :: Google group : dev@dubbo.incubator.apache.org
-
-  2022-02-22-01-39 [main] [com.alibaba.boot.dubbo.context.event.OverrideDubboConfigApplicationListener] [INFO] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=dubbo-provider, dubbo.protocol.name=dubbo, dubbo.protocol.port=20880, dubbo.provider.timeout=1000, dubbo.registry.address=zookeeper://localhost:2181}
-  

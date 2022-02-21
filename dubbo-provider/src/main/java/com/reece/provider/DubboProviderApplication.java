@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Reece
  * @date 2022/2/21 16:34:45
  */
-@EnableDubbo
+@EnableDubbo(scanBasePackages = "com.reece.provider.service.impl")
 @SpringBootApplication
 public class DubboProviderApplication {
 

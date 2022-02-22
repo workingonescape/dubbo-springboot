@@ -6,7 +6,7 @@
     <groupId>com.reece.dubbo</groupId>
     <artifactId>dubbo-springboot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <modules>
         <module>dubbo-api</module>
@@ -76,6 +76,7 @@
                  <groupId>org.springframework.boot</groupId>
                  <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
+
     </dependencies>
 
     <build>

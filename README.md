@@ -3,18 +3,41 @@
 
 ## **一、运行工具与环境**
 
-运行环境：JDK 8，Maven 3.3+
-技术栈：SpringBoot 2.0+、Dubbo 2.6+、ZooKeeper 3.3+
-工具：IntelliJ IDEA、谷歌浏览器
+运行环境：JDK 8，Maven 3.3+ 技术栈：SpringBoot 2.0.4.RELEASE、Dubbo 2.6+、ZooKeeper 3.3+ 工具：IntelliJ IDEA、谷歌浏览器
 
 ## **二、Springboot快速集成Dubbo关键的依赖**
 
-```maven
+```xml
+        <!-- 关键依赖-->
 <dependency>
-    <groupId>com.alibaba.boot</groupId>
+    <groupId>org.apache.dubbo</groupId>
     <artifactId>dubbo-spring-boot-starter</artifactId>
-    <version>0.2.0</version>
+    <version>2.7.15</version>
 </dependency>
+```
+
+需要注意的是，为了方便研究`Dubbo`源码，这里不使用`SpringBoot`自带的`Logback`，而是使用`SLF4J`日志框架，同时将日志的**级别**更改为`DEBUg`级别。
+
+```xml
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <exclusions>
+        <!--排除logback-->
+        <exclusion>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+        
+        <!--log4j2 依赖-->
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-log4j2</artifactId>
+</dependency>
+
 ```
 
 ## **三、如何使用**

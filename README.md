@@ -3,7 +3,7 @@
 
 ## **一、运行工具与环境**
 
-运行环境：JDK 8，Maven 3.3+ 技术栈：SpringBoot 2.0.4.RELEASE、Dubbo 2.6+、ZooKeeper 3.3+ 工具：IntelliJ IDEA、谷歌浏览器
+运行环境：JDK 8，Maven 3.3+ 技术栈：SpringBoot 2.0.4.RELEASE、Dubbo 2.7.15、ZooKeeper 3.6.3 工具：IntelliJ IDEA、谷歌浏览器
 
 ## **二、Springboot快速集成Dubbo关键的依赖**
 

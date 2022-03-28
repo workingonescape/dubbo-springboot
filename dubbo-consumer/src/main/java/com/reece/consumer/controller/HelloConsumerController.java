@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloConsumerController {
 
-    @Reference
-    private HelloService helloService;
-
-    @RequestMapping("/sayHello/{name}")
-    public String sayHello(@PathVariable("name") String name) {
-        return helloService.sayHello(name);
-    }
+//    @Reference
+//    private HelloService helloService;
+//
+//    @RequestMapping("/sayHello/{name}")
+//    public String sayHello(@PathVariable("name") String name) {
+//        return helloService.sayHello(name);
+//    }
 
 }
